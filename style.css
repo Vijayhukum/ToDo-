@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: url("https://media.istockphoto.com/id/1160569491/es/foto/reloj-de-bolsillo-viejo-sobre-fondo-oscuro.jpg?s=612x612&w=0&k=20&c=yxUhPV5XJG9zRGQZlzHckDehHED75HZEZY2q1TTqF-E=");
+
+  background: linear-gradient(135deg, #001f3f, #39cccc);
+
+  /* background-image: url("to do list/images/images/to.avif"); */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  background-size: cover;
+  /* overflow: hidden; */
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-12 {
+  width: 600px;
+  background-color: yellow;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  /* padding-bottom: 30px; */
+  display: flex;
+}
+
+/* image from font awesome */
+.col-md-12 h1 i {
+  float: right;
+  padding-left: 290px;
+}
+
+/* image from file/local */
+/* .col-md-12 img {
+  position: relative;
+  float: right;
+
+  padding-right: 30px;
+} */
+#main-header {
+  border-radius: 5px;
+}
+#header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #030202;
+}
+h4 {
+  color: #9bb55b;
+  padding: 3px 5px;
+}
+.todo-input {
+  width: 500px;
+  /* display: flex; */
+}
+.todo-input input {
+  padding: 3px 5px;
+  width: 80%;
+  margin-left: 25px;
+}
+
+.container {
+  width: 50%;
+  overflow-y: auto;
+  min-height: 500px;
+  margin-top: 5em;
+
+  box-shadow: 0px 0px 20px rgba(8, 204, 187, 0.2); /* Adjust values as needed */
+  background-color: #7e7e7e; /* Light gray background color */
+  padding: 20px; /* Add padding to the container */
+  border-radius: 10px; /* Add rounded corners */
+  background: transparent;
+}
+
+/* @media (max-width: 768px) {
+  .container {
+    width: 70%;
+    background-repeat: no-repeat;
+    padding: 15px; /* Adjust padding for smaller screens */
+/* }
+} */
+@media screen and (max-width: 800px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 99%;
+    margin-top: 5em;
+  }
+}
+
+.item {
+  display: flex;
+  /* flex-direction: row; */
+  padding: 1rem;
+  /* border-bottom: 4px solid rgb(249, 230, 146); */
+}
+
+.content {
+  display: flex;
+  width: 90%;
+}
+.item .content .text {
+  font-size: 1.125rem;
+  width: 100%;
+  margin-left: 5px;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.item .content .text:hover {
+  cursor: context-menu;
+}
+.item .actions {
+  display: flex;
+}
+.item .actions button {
+  margin-left: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.checkbox {
+  font-size: 100px;
+}
